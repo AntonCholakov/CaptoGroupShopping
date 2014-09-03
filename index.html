@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8"/>
+	<title>Start It Smart</title>
+	<meta name="description" content="StartItSmart" />
+	<meta name="keywords" content="StartItSmart" />
+	<meta name="author" content = "StartItSmart"/>
+	<meta name="robots" content="noindex, nofollow" />
+
+	<!-- disable iPhone inital scale -->
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	
+	<!-- CSS  -->
+	<link href="../favicon.ico" rel="shortcut icon">
+	<link href="css/layout.css" rel="stylesheet">
+	<link href="css/slideshow.css" rel="stylesheet">
+	<link href="css/carousel.css" rel="stylesheet">
+	<link href="css/nav.css" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<header id="header">
+		
+		<div class="container">
+			<div id="logo" class="pull-left">
+				<h1>Logo</h1>
+			</div>
+			<div id="header-elements" class="pull-right">
+				<div id="cart" class="pull-left">Cart</div>
+				<div id="login" class="pull-left">
+					<a href="#">Вход</a> | <a href="#contact" data-toggle="modal">Регистрация</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Search -->
+		<div class="container">
+			<div id="search">
+				<form>
+					<input type="text" placeholder="Търсене..." required="required">
+                    <input type="button" value="Search">
+				</form>
+			</div>
+		</div>
+
+		<div class="upper-border"></div>
+
+	</header>
+	<!-- Navi -->
+	<nav id="fancy-nav">
+		<!-- Start Nav Structure -->
+		<button class="cn-button" id="cn-button">+</button>
+		<div class="cn-wrapper" id="cn-wrapper">
+			<ul>
+				<li><a href="http://facebook.com"><i class="fa fa-home"></i></a></li>
+				<li><a href="http://google.bg"><i class="fa fa-home"></i></a></li>
+				<li><a href="http://winner.bg"><i class="fa fa-home"></i></a></li>
+				<li><a href="http://zamunda.net"><i class="fa fa-home"></i></a></li>
+				<li><a href="http://youtube.com"><i class="fa fa-home"></i></a></li>
+			</ul>
+		</div>
+		<div id="cn-overlay" class="cn-overlay"></div>
+		<!-- End Nav Structure -->
+	</nav>
+	
+	<div id="content">
+		<div class="container">
+			<div id="categories" class="pull-left">
+				<ul>
+					<li><a href="">Всички</a></li>
+					<li><a href="">Категория</a></li>
+					<li><a href="">Категория</a></li>
+					<li><a href="">Категория</a></li>
+					<li><a href="">Категория</a></li>
+					<li><a href="">Категория</a></li>
+					<li><a href="">Категория</a></li>
+					<li><a href="">Категория</a></li>
+					<li><a href="">Други</a></li>
+				</ul>
+			</div>
+
+			<div id="slider" class="pull-left">
+				<div id="slideshow">
+					<!-- Below are the images in the gallery -->
+				    <div id="img-1" data-img-id="1" class="img-wrapper active" style="background-image: url('images/img1.jpg')"></div>
+				    <div id="img-2" data-img-id="2" class="img-wrapper" style="background-image: url('images/img2.jpg')"></div>
+				    <div id="img-3" data-img-id="3" class="img-wrapper" style="background-image: url('images/img3.jpg')"></div>
+				    <div id="img-4" data-img-id="4" class="img-wrapper" style="background-image: url('images/img2.jpg')"></div>
+
+					<!-- Below are the thumbnails of above images -->
+				    <div class="thumbs-container bottom">
+				    	<div id="prev-btn" class="prev">
+				    		<i class="fa fa-chevron-left fa-3x"></i>
+				    	</div>
+
+						<ul class="thumbs">
+							<li data-thumb-id="1" class="thumb active" style="background-image: url('images/img1-thumb.jpg')"></li>
+							<li data-thumb-id="2" class="thumb" style="background-image: url('images/img2-thumb.jpg')"></li>
+							<li data-thumb-id="3" class="thumb" style="background-image: url('images/img3-thumb.jpg')"></li>
+							<li data-thumb-id="4" class="thumb" style="background-image: url('images/img2-thumb.jpg')"></li>
+							<li data-thumb-id="5" class="thumb" style="background-image: url('images/img1-thumb.jpg')"></li>
+							<li data-thumb-id="6" class="thumb" style="background-image: url('images/img2-thumb.jpg')"></li>
+							<li data-thumb-id="7" class="thumb" style="background-image: url('images/img3-thumb.jpg')"></li>
+							<li data-thumb-id="8" class="thumb" style="background-image: url('images/img2-thumb.jpg')"></li>
+						</ul>
+
+				    	<div id="next-btn" class="next">
+				    		<i class="fa fa-chevron-right fa-3x"></i>
+				    	</div>
+				    </div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Offers, combined by category -->
+		<section class="container" id="offers">
+			<div class="offers-heading">
+				<h2>New</h2>
+				<a href="#">Вижте повече</a>
+			</div>
+			<div id="new" class="offers-row-holder">
+				<div class="offer">
+					<img src="http://placehold.it/282x242" alt="Alt" />
+					<div class="price"><span>99.99лв</span></div>
+					<div class="additional-info">
+						<div class="description">
+							Описание на продукта... Описание на продукта... Описание на продукта... Описание на продукта... Описание на продукта... 
+						</div>
+						<div class="additional-descr">
+							<span class="old-price">144.99лв</span><br>
+							<span class="summary-price">Спестявате <span class="profit">45 лева</span></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="offer">
+					<img src="http://placehold.it/282x242" alt="Alt" />
+					<div class="price"><span>99.99лв</span></div>
+					<div class="additional-info">
+						<div class="description">
+							Описание на продукта... Описание на продукта... Описание на продукта... Описание на продукта... Описание на продукта... 
+						</div>
+						<div class="additional-descr">
+							<span class="old-price">144.99лв</span><br>
+							<span class="summary-price">Спестявате <span class="profit">45 лева</span></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="offer">
+					<img src="http://placehold.it/282x242" alt="Alt" />
+					<div class="price"><span>99.99лв</span></div>
+					<div class="additional-info">
+						<div class="description">
+							Описание на продукта... Описание на продукта... Описание на продукта... Описание на продукта... Описание на продукта... 
+						</div>
+						<div class="additional-descr">
+							<span class="old-price">144.99лв</span><br>
+							<span class="summary-price">Спестявате <span class="profit">45 лева</span></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="offer">
+					<img src="http://placehold.it/282x242" alt="Alt" />
+					<div class="price"><span>99.99лв</span></div>
+					<div class="additional-info">
+						<div class="description">
+							Описание на продукта... Описание на продукта... Описание на продукта... Описание на продукта... Описание на продукта... 
+						</div>
+						<div class="additional-descr">
+							<span class="old-price">144.99лв</span><br>
+							<span class="summary-price">Спестявате <span class="profit">45 лева</span></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="offer">
+					<img src="http://placehold.it/282x242" alt="Alt" />
+					<div class="price"><span>99.99лв</span></div>
+					<div class="additional-info">
+						<div class="description">
+							Описание на продукта... Описание на продукта... Описание на продукта... Описание на продукта... Описание на продукта... 
+						</div>
+						<div class="additional-descr">
+							<span class="old-price">144.99лв</span><br>
+							<span class="summary-price">Спестявате <span class="profit">45 лева</span></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="offer">
+					<img src="http://placehold.it/282x242" alt="Alt" />
+					<div class="price"><span>99.99лв</span></div>
+					<div class="additional-info">
+						<div class="description">
+							Описание на продукта... Описание на продукта... Описание на продукта... Описание на продукта... Описание на продукта... 
+						</div>
+						<div class="additional-descr">
+							<span class="old-price">144.99лв</span><br>
+							<span class="summary-price">Спестявате <span class="profit">45 лева</span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer id="footer">
+		<div class="container">
+			<nav class="pull-right">
+				<ul>
+					<li><a href="">Menu item</a></li>
+					<li><a href="">Menu item</a></li>
+					<li><a href="">Menu item</a></li>
+					<li><a href="">Menu item</a></li>
+					<li><a href="">Menu item</a></li>
+				</ul>
+			</nav>
+			<p id="copyrights" class="pull-left">Copyright Start it Smart</p>
+		</div>
+	</footer>
+
+	<a href="#" class="scrollToTop"></a>
+
+	<div class="modal fade" id="contact" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form class="form-horizontal">
+                    <div class="modal-header">
+                        <p>Contact Me</p>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="contact-name" class="col-lg-2 control-label">Name:</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="contact-name" placeholder="Full name"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email" class="col-lg-2 control-label">Email:</label>
+                            <div class="col-lg-10">
+                                <input type="email" class="form-control" id="contact-email" placeholder="you@example.com" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-msg" class="col-lg-2 control-label">Message:</label>
+                            <div class="col-lg-10">
+                                <textarea class="form-control" id="contact-msg" placeholder="Your message"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-default" data-dismiss="modal">Close</a>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+	
+	<!-- Scripts -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.scrollTo.min.js"></script>
+	<script src="js/nav.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/functions.js"></script>
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="js/polyfills.js"></script>
+	<script src="js/gallery.js"></script>
+	<script>
+	/*$(function() {
+		$('body').on("mousewheel", function() {
+			
+			if($(document).scrollTop() > 120) {
+				$('#cn-button').css("top", "-1.5em");
+				$('#cn-wrapper').css("top", "-13.25em");
+			} else  {
+				$('#cn-button').css("top", "3.75em");
+				$('#cn-wrapper').css("top", "-4.25em");
+			}
+			
+		});
+	});*/
+	$(document).ready(function(){
+	
+		//Check to see if the window is top if not then display button
+		$(window).scroll(function(){
+			if ($(this).scrollTop() > 70) {
+				$('.scrollToTop').fadeIn();
+				$('#cn-button').css("top", "-1.5em");
+				$('#cn-wrapper').css("top", "-13.25em");
+			} else {
+				$('.scrollToTop').fadeOut();
+				$('#cn-button').css("top", "3.75em");
+				$('#cn-wrapper').css("top", "-4.25em");
+			}
+		});
+		
+		//Click event to scroll to top
+		$('.scrollToTop').click(function(){
+			$('html, body').animate({scrollTop : 0},800);
+			return false;
+		});
+		
+	});
+	</script>
+</body>
+</html>
